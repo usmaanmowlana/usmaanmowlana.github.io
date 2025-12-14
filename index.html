@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usmaan Mowlana | Data & Financial Engineering</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">UziMowlana<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about"><span class="num">01</span> About</a></li>
+            <li><a href="#experience"><span class="num">02</span> Experience</a></li>
+            <li><a href="#education"><span class="num">03</span> Education</a></li>
+            <li><a href="#projects"><span class="num">04</span> Projects</a></li>
+            <li><a href="#volunteering"><span class="num">05</span> Volunteering</a></li>
+            <li><a href="#contact"><span class="num">06</span> Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="about" class="hero-section">
+    <div class="hero-content">
+        <p class="hero-greeting">Hi, my name is</p>
+        <h1 class="hero-name">Usmaan Mowlana</h1>
+        <h2 class="hero-subtitle">Welcome to my Portfolio</h2>
+        <p class="hero-bio">
+            I enjoy solving real-world problems through thoughtful research, clear communication, and a bit of creative structure. 
+            I currently work as a Junior Analyst at <strong>Uzabase Inc.</strong> in the Global Startup Division, while pursuing my CIMA qualification and 
+            a BSc in Financial Engineering at the University of Colombo
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="cv/Usmaan_Mowlana_CV.pdf" target="_blank" class="btn btn-outline">Resume</a>
+        </div>
+    </div>
+    
+    <div class="hero-visual">
+        <div class="circle-bg"></div>
+        <img src="assets/img/hero-cutout.png" alt="Usmaan Mowlana" class="hero-img">
+    </div>
+</section>
+
+<section id="experience" class="section">
+        <h3 class="section-heading"><span class="num">02.</span> Professional Journey</h3>
+        
+        <div class="jobs-container">
+            <div class="job-tabs">
+                <button class="tab-btn active" onclick="openJob(event, 'uzabase')">Uzabase Inc.</button>
+                <button class="tab-btn" onclick="openJob(event, 'rmg')">RMG Live</button>
+            </div>
+
+            <div class="job-content-wrapper">
+                
+                <div id="uzabase" class="job-content active">
+                    <div class="company-header">
+                        <div class="company-logo-placeholder">UB</div> 
+                        <div class="company-title">
+                            <h3>Uzabase Inc.</h3>
+                            <span>Global Business Intelligence</span>
+                        </div>
+                    </div>
+
+                    <div class="role-timeline">
+                        <div class="role-block">
+                            <h4 class="role-title">Junior Analyst - Global Startup</h4>
+                            <span class="role-date">June 2025 - December 2025</span>
+                            <ul>
+                                <li>As part of the Global Startup Team within the UB DataTech Division, I contribute towards the acquisition, maintenance, and validation of data for the Global Startup Database, ensuring the accuracy and completeness of startup funding and company-related information.</li>
+                                <li>I actively leverage AI tools and techniques to optimize data collection and workflow efficiency, refining my prompt engineering skills to extract structured and uniform data from diverse sources.</li>
+                                <li>My role also involves performing back-testing tasks to verify data consistency and enhance database reliability, while contributing to the continual improvement of data quality and process automation across the team.</li>
+                                <li>Additionally, I work on ad-hoc big data workflow automation projects using Python, SQL, and VS Code to build and maintain pipelines for diverse datasets.</li>
+                            </ul>
+                            <div class="job-gallery">
+                                <img src="assets/img/experience/startup-5.jpeg" alt="Startup Work 1">
+                                <img src="assets/img/experience/startup-6.jpeg" alt="Startup Work 2">
+                                <img src="assets/img/experience/startup-3.jpeg" alt="Startup Work 3">
+                            </div>
+                        </div>
+
+                        <div class="role-block">
+                            <h4 class="role-title">Intern Analyst - Emerging Tech Research</h4>
+                            <span class="role-date">November 2024 - June 2025</span>
+                            <ul>
+                                <li>My primary role involved monitoring and providing timely news coverage on key developments in emerging niche industries, particularly within the Aerospace/Defense and Sustainability sectors, for the SPEEDA Edge platform.</li>
+                                <li>I conducted in-depth research to create company profiles and perform competitive analysis on both established companies and start-ups in my assigned industries, maintaining these profiles to reflect the most recent developments.</li>
+                                <li>Additionally, I performed ad-hoc maintenance updates for incumbent profiles, industry overview reports, use-case maps and company teardowns to keep the insights and information current for clients.</li>
+                            </ul>
+                             <div class="job-gallery">
+                                <img src="assets/img/experience/edge-1.jpeg" alt="Edge Team 1">
+                                <img src="assets/img/experience/edge-2.jpeg" alt="Edge Team 2">
+                                <img src="assets/img/experience/edge-4.jpeg" alt="Edge Team 3">
+                            </div>
+                        </div>
+
+                        <div class="role-block">
+                            <h4 class="role-title">Intern - Data Assurance & Stats</h4>
+                            <span class="role-date">May 2024 - November 2024</span>
+                            <ul>
+                                <li>My role was centered around executing data acquisition tasks by sourcing and verifying business intelligence data from verified sources and data suppliers, ensuring accurate and timely updates on the platform.</li>
+                                <li>I also contributed to a project focused on standardizing and maintaining the uniformity of data entries from multiple sources, enhancing the accessibility and consistency of information for clients using the SPEEDA platform.</li>
+                                <li>Additionally, I also worked on data validations and mappings at a preliminary stage, and contributed to the maintenance of the statistics database.</li>
+                            </ul>
+                             <div class="job-gallery">
+                                <img src="assets/img/experience/data-stats-01.jpeg" alt="Data Assurance Work">
+                                <img src="assets/img/experience/data-stats-04.jpeg" alt="Data Assurance Work">
+                                <img src="assets/img/experience/data-stats-03.jpeg" alt="Data Assurance Work">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rmg" class="job-content">
+                    <div class="company-header">
+                        <div class="company-logo-placeholder">RMG</div>
+                        <div class="company-title">
+                            <h3>RMG Live</h3>
+                            <span>Events & Entertainment</span>
+                        </div>
+                    </div>
+
+                    <div class="role-timeline">
+                        <div class="role-block">
+                            <h4 class="role-title">Event Specialist (Part-time)</h4>
+                            <span class="role-date">February 2024 - Present</span>
+                            <ul>
+                                <li>Manage logistics and on-ground coordination for large-scale concerts and live productions.</li>
+                                <li>Key projects include the "Bryan Adams Tribute Show", the premier event at the City of Dreams, Cinnamon Life in July 2025 and "Saturday Night Live 2024" in November 2024.</li>
+                                <li>Being a part of the behind the scenes team for the Carnage - Health & Fitness Expo, Sri Lanka's first of this nature.</li>
+                            </ul>
+                             <div class="job-gallery">
+                                <img src="assets/img/experience/rmg1.jpeg" alt="Concert Stage">
+                                <img src="assets/img/experience/rmg3.jpeg" alt="Backstage">
+                                <img src="assets/img/experience/rmg2.jpeg" alt="Backstage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<section id="education" class="section">
+    <h3 class="section-heading"><span class="num">03.</span> Education</h3>
+
+    <div class="edu-grid">
+        <div class="edu-card">
+            <div class="edu-header">
+                <span class="edu-year">December 2025 - 2028</span>
+                <span class="edu-badge">Undergraduate</span>
+            </div>
+            <h4 class="edu-school">University of Colombo</h4>
+            <h5 class="edu-degree">BSc in Financial Engineering</h5>
+            <p class="edu-desc">Specializing in Finance and Financial Engineering.</p>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-header">
+                <span class="edu-year">April 2024</span>
+                <span class="edu-badge">CIMA Dip MA</span>
+            </div>
+            <h4 class="edu-school">CIMA</h4>
+            <h5 class="edu-degree">Certificate in Business Accounting</h5>
+            <p class="edu-desc">Reading Management Level</p>
+        </div>
+    </div>
+
+    <div class="spc-feature">
+        <div class="spc-content">
+            <div class="spc-info">
+                <h4 class="spc-name">St. Peter's College</h4>
+                <span class="spc-stream">Secondary Education, Commerce / General (2009 - 2024)</span>
+                
+                <div class="spc-roles" style="margin-top: 25px; margin-bottom: 30px;">
+                    <p class="mono-heading">LEADERSHIP</p>
+                    <div class="role-tags">
+                        <span>College Senior Prefect</span>
+                        <span>House Captain</span>
+                        <span>President of the Interact Club</span>
+                        <span>College Coloursman</span>
+                        <span>Treasurer of the Peterite Media Unit</span>
+                        <span>Vice President of the English Literary & Drama Society</span>
+                        <span>Quiz Master of the Do-You-Know Club</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spc-scorecard">
+                <div class="sc-header">
+                    <span class="sc-exam">G.C.E. Advanced Level</span>
+                    <span class="sc-year">2024 Results</span>
+                </div>
+                <div class="sc-grid">
+                    <div class="sc-item">
+                        <div class="sc-value">A</div>
+                        <div class="sc-label">Accounting</div>
+                    </div>
+                    <div class="sc-divider"></div>
+                    <div class="sc-item">
+                        <div class="sc-value">A</div>
+                        <div class="sc-label">Economics</div>
+                    </div>
+                    <div class="sc-divider"></div>
+                    <div class="sc-item">
+                        <div class="sc-value">B</div>
+                        <div class="sc-label">Business</div>
+                    </div>
+                </div>
+                <div class="sc-footer-line"></div>
+            </div>
+        </div>
+
+        <div class="spc-visual">
+            <div class="vertical-train-wrapper">
+                
+                <div class="v-track-col">
+                    <div class="v-track v-up">
+                        <img src="assets/img/education/spc1.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc2.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc3.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc4.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc5.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc6.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc7.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc8.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc9.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc10.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc11.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc12.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc13.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc14.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc15.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc16.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc17.jpeg" alt="SPC">
+                    </div>
+                </div>
+
+                <div class="v-track-col">
+                    <div class="v-track v-down">
+                        <img src="assets/img/education/spc18.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc19.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc20.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc21.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc22.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc23.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc24.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc25.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc26.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc27.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc28.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc29.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc30.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc31.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc32.jpeg" alt="SPC">
+                        <img src="assets/img/education/spc33.jpeg" alt="SPC">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="certs-container">
+    <p class="mono-heading">LICENSES & CERTIFICATIONS</p>
+    <div class="certs-grid">
+        
+        <a href="assets/certs/mckinsey.pdf" target="_blank" class="cert-item">
+            <div class="cert-icon">M</div>
+            <div class="cert-info">
+                <span class="cert-title">McKinsey Forward Program</span>
+                <span class="cert-issuer">McKinsey & Company</span>
+            </div>
+        </a>
+
+        <a href="assets/certs/vs_online.pdf" target="_blank" class="cert-item">
+            <div class="cert-icon">VS</div>
+            <div class="cert-info">
+                <span class="cert-title">Visual Studio Online</span>
+                <span class="cert-issuer">Great Learning</span>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<section id="projects" class="section">
+    <h3 class="section-heading"><span class="num">04.</span> Projects & Ventures</h3>
+
+    <div class="project-card stealth-card">
+        <div class="project-info">
+            <p class="project-overline">Confidential Venture</p>
+            <h3 class="project-title">Stealth Data/AI Company</h3>
+            <div class="project-desc">
+                <p>
+                    Currently building a proprietary engine to connect raw numbers to broader market insights. 
+                    Focusing on Big Data Engineering and AI-led analysis to help users understand the "bigger picture" behind the data.
+                </p>
+            </div>
+            <div class="stealth-lock">
+                <span>🔒 Confidential</span>
+            </div>
+        </div>
+        <div class="project-visual stealth-visual">
+            <div class="code-block">
+                <code>
+                    > initiating_sequence...<br>
+                    > connecting_nodes...<br>
+                    > access_denied: 403<br>
+                    > strictly_confidential
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card reversed">
+        <div class="project-visual">
+            <div class="slideshow-container" id="slider-rmg">
+                <div class="slide fade"><img src="assets/img/projects/rmg1.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/rmg2.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/rmg3.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/rmg4.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/rmg5.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/rmg6.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/rmg7.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/rmg8.jpeg" style="width:100%"></div>
+                <a class="prev" onclick="plusSlides(-1, 'slider-rmg')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'slider-rmg')">&#10095;</a>
+            </div>
+        </div>
+        <div class="project-info">
+            <p class="project-overline">Event Management</p>
+            <h3 class="project-title">RMG Live Productions</h3>
+            <div class="project-desc">
+                <p>
+                    I have been fortunate to work behind the scenes on several large-scale sold-out RMG Live productions, including the 
+                    Bryan Adams Tribute Show at City of Dreams, Saturday Night Live 2024 at Taj Samudra, and “මතකයන් 2024: 
+                    The Greatest Hits Concert” featuring leading Sri Lankan artists.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-info">
+            <p class="project-overline">Community Service</p>
+            <h3 class="project-title">Peterites Share the Joy of the Centenary</h3>
+            <div class="project-desc">
+                <p>
+                    Led the inaugural community service initiative undertaken by an educational institution in collaboration with the Sirasa Gammadda Movement,
+                    aimed at providing sustainable access to safe drinking water. The project focused on fundraising and constructing a Reverse Osmosis (RO) 
+                    plant to serve 550 families in Mahakarambewa, Puttalam. With support from the Student Body, Academic and Non-Academic Staff, and internal 
+                    stakeholders of St. Peter’s College, the initiative successfully raised over LKR 4.9 million and was completed as part of the College’s 
+                    centenary celebrations, delivering a long-term community impact.
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://youtu.be/mpfplIR9FRo?si=yxpqosFUz7HX__PE" target="_blank" class="project-btn">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    Watch Video
+                </a>
+                <a href="https://www.stpeterscollege.lk/2023/02/22/peterites-share-the-joy-of-the-centenary/" target="_blank" class="project-btn">
+                    <ion-icon name="newspaper-outline"></ion-icon>
+                    Read Article
+                </a>
+            </div>
+        </div>
+        <div class="project-visual">
+            <div class="slideshow-container" id="slider-water">
+                <div class="slide fade"><img src="assets/img/projects/water1.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/water2.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/water3.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/water4.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/water5.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/water6.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/water7.jpeg" style="width:100%"></div>
+                <a class="prev" onclick="plusSlides(-1, 'slider-water')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'slider-water')">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card reversed">
+        <div class="project-visual">
+            <div class="slideshow-container" id="slider-assembly">
+                <div class="slide fade"><img src="assets/img/projects/assembly1.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/assembly2.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/assembly3.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/assembly4.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/assembly5.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/assembly6.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/assembly7.jpeg" style="width:100%"></div>
+                <a class="prev" onclick="plusSlides(-1, 'slider-assembly')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'slider-assembly')">&#10095;</a>
+            </div>
+        </div>
+        <div class="project-info">
+            <p class="project-overline">Legacy Event</p>
+            <h3 class="project-title">33rd Interact District Assembly</h3>
+            <div class="project-desc">
+                <p>
+                    Served as Chairperson of the 33rd Interact District Assembly on 17 June 2023 at Temple Trees, attended by 960+ Interactors, 
+                    district officials, and dignitaries. The event, themed ‘සමගිය in சக்தி’ (Unity in Strength), featured Hon. Prime Minister 
+                    Dinesh Gunawardana as Chief Guest and concluded with a financial surplus exceeding LKR 1.2 million.
+                </p>
+            </div>
+            <div class="project-links">
+                <a href="https://www.youtube.com/watch?v=eUOHoDn1V8g" target="_blank" class="project-btn">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                    Watch Livestream
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-info">
+            <p class="project-overline">Legacy Event</p>
+            <h3 class="project-title">89th Battle of the Saints</h3>
+            <div class="project-desc">
+                <p>
+                    Led the Prefects' Body of St. Peter's College during the 89th "Battle of the Saints" Big Match and the 49th Limited-Over Encounter, 
+                    coordinating with the Joint Organizing Committee to manage crowd control and logistics for thousands of spectators at the SSC Grounds.
+                </p>
+            </div>
+        </div>
+        <div class="project-visual">
+            <div class="slideshow-container" id="slider-bigmatch">
+                <div class="slide fade"><img src="assets/img/projects/bigmatch1.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/bigmatch2.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/bigmatch3.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/bigmatch4.jpeg" style="width:100%"></div>
+                <div class="slide fade"><img src="assets/img/projects/bigmatch5.jpeg" style="width:100%"></div>
+                <a class="prev" onclick="plusSlides(-1, 'slider-bigmatch')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'slider-bigmatch')">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="volunteering" class="section">
+    <h3 class="section-heading"><span class="num">05.</span> Volunteering</h3>
+
+    <div class="vol-card">
+        <div class="vol-header">
+            <h4 class="vol-role">Club President</h4>
+            <span class="vol-org">Interact Club of St. Peter's College</span>
+            <span class="vol-date">July 2021 - June 2022</span>
+        </div>
+        <div class="vol-content">
+            <ul>
+                <li>Ex-officio member (Presided) of over 100 committees for projects/events conducted during the years 2021-2022.</li>
+                <li>Collaborated on projects with various non-profit organizations, including Road2Rights, Yeheliya Foundation, and WNPS.</li>
+                <li>Won 9 prestigious awards and 7 citations at the 32nd Interact District Assembly during tenure of Presidency. The most significant being:
+                    <ul class="sub-awards">
+                        <li>Most Outstanding Club Award of the RID. 3220 (2nd runners-up)</li>
+                        <li>Most Outstanding President Award of the RID. 3220 (1st runner-up)</li>
+                        <li>Champions of Interaction (Colombo) 2022</li>
+                        <li>Platinum Standard Club & Rotary International Citation</li>
+                        <li>Club President Citation</li>
+                    </ul>
+                    </li>
+            </ul>
+        </div>
+        
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <img src="assets/img/volunteering/interact-1.jpeg" class="marquee-img" alt="President 1">
+                <img src="assets/img/volunteering/interact-2.jpeg" class="marquee-img" alt="President 2">
+                <img src="assets/img/volunteering/interact-3.jpeg" class="marquee-img" alt="President 3">
+                <img src="assets/img/volunteering/interact-4.jpeg" class="marquee-img" alt="President 4">
+                <img src="assets/img/volunteering/interact-5.jpeg" class="marquee-img" alt="President 5">
+                <img src="assets/img/volunteering/interact-6.jpeg" class="marquee-img" alt="President 6">
+                <img src="assets/img/volunteering/interact-7.jpeg" class="marquee-img" alt="President 7">
+                <img src="assets/img/volunteering/interact-8.jpeg" class="marquee-img" alt="President 8">
+                <img src="assets/img/volunteering/interact-9.jpeg" class="marquee-img" alt="President 9">
+                <img src="assets/img/volunteering/interact-10.jpeg" class="marquee-img" alt="President 10">
+                <img src="assets/img/volunteering/interact-11.jpeg" class="marquee-img" alt="President 11">
+                <img src="assets/img/volunteering/interact-12.jpeg" class="marquee-img" alt="President 12">
+                <img src="assets/img/volunteering/interact-13.jpeg" class="marquee-img" alt="President 13">
+                <img src="assets/img/volunteering/interact-14.jpeg" class="marquee-img" alt="President 14">
+                <img src="assets/img/volunteering/interact-15.jpeg" class="marquee-img" alt="President 15">
+                <img src="assets/img/volunteering/interact-16.jpeg" class="marquee-img" alt="President 16">
+                <img src="assets/img/volunteering/interact-17.jpeg" class="marquee-img" alt="President 17">
+                <img src="assets/img/volunteering/interact-18.jpeg" class="marquee-img" alt="President 18">
+                <img src="assets/img/volunteering/interact-19.jpeg" class="marquee-img" alt="President 19">
+                <img src="assets/img/volunteering/interact-20.jpeg" class="marquee-img" alt="President 20">
+                <img src="assets/img/volunteering/interact-28.jpeg" class="marquee-img" alt="President 21">
+                <img src="assets/img/volunteering/interact-29.jpeg" class="marquee-img" alt="President 22">
+                <img src="assets/img/volunteering/interact-30.jpeg" class="marquee-img" alt="President 23">
+            </div>
+        </div>
+    </div>
+
+    <div class="vol-card">
+        <div class="vol-header">
+            <h4 class="vol-role">District Finance Director</h4>
+            <span class="vol-org">Interact District Council 3220, Sri Lanka & Maldives</span>
+            <span class="vol-date">July 2022 - June 2023</span>
+        </div>
+        <div class="vol-content">
+            <ul>
+                <li>Served as Project Treasurer for major district-level initiatives, including International Understanding Celebrations (2022–2023), 
+                    IBTS 2022, InterEve 2022, GreenCon 2023, and Interact Week Celebrations (2022–2023).</li>
+                <li>Managed external financial correspondence with corporate partners and sponsors, including sponsorship proposals, 
+                    investment communications, and formal financial documentation.</li>
+                <li>Provided strategic guidance to Finance Directors of 150+ Interact Clubs across the district on fundraising, sponsor and corporate 
+                    correspondence, financial planning, budgeting, and basic investment planning, ensuring financial discipline and alignment with district standards.</li>
+                <li>Supported the implementation of standardized financial practices across clubs to improve transparency, accountability, and sustainability of district and club-level projects.</li>
+            </ul>
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <img src="assets/img/volunteering/district-1.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-2.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-3.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-4.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-5.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-6.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-7.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-8.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-9.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-10.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-11.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-12.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-13.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-14.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-15.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-16.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-17.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-18.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-19.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-20.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-21.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/district-22.jpeg" class="marquee-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="vol-card">
+        <div class="vol-header">
+            <h4 class="vol-role">Chairperson of the 33rd Interact District Assembly</h4>
+            <span class="vol-org">Interact District 3220, Sri Lanka & Maldives</span>
+            <span class="vol-date">July 2022 - June 2023</span>
+        </div>
+        <div class="vol-content">
+            <ul>
+                <li>Served as Chairperson of the 33rd Interact District Assembly, the official concluding district event for the Interact year 2022/2023 in District 3220 (Sri Lanka & Maldives).</li>
+                <li>Successfully concluded the project with a financial surplus exceeding LKR 1.2 million, reflecting disciplined budgeting and effective cost management.</li>
+            </ul>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <img src="assets/img/volunteering/finance-1.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-2.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-3.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-4.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-5.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-6.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-7.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-8.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-9.jpeg" class="marquee-img">
+                <img src="assets/img/volunteering/finance-10.jpeg" class="marquee-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="vol-card">
+        <div class="vol-header">
+            <h4 class="vol-role">Director of Finance</h4>
+            <span class="vol-org">Interact Club of St. Peter's College</span>
+            <span class="vol-date">July 2020 - June 2021</span>
+        </div>
+        <div class="vol-content">
+            <ul>
+                <li>Project Chairperson of the Most Outstanding Finance Project conducted within the Rotary International District 3220 for the Interact year, 2020/21 - Project "Picture Perfect"</li>
+                <li>Awarded "Best ILT Participant" at the Interact Leadership Training Programme organised by the Interact District Council 3220, 2020-2021.</li>
+                </li>Active participation as a General Member of the Club for 4 years prior to being elected as the Finance Director.</li>
+            </ul>
+        </div>
+    
+    </div>
+    <div class="vol-card">
+        <div class="vol-header">
+            <h4 class="vol-role">Director of Community Service</h4>
+            <span class="vol-org">Rotaract Club of Colombo Heritage</span>
+            <span class="vol-date">July 2024 - June 2025</span>
+        </div>
+        <div class="vol-content">
+            <ul>
+                <li>Leading community outreach initiatives and service projects for the Rotaract year.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact-section">
+    
+    <div class="contact-container">
+        <p class="contact-overline">06. What's Next?</p>
+        <h2 class="contact-title">Get In Touch</h2>
+        <p class="contact-desc">
+            I am currently exploring opportunities in <span class="highlight">Data Engineering</span> and <span class="highlight">Financial Systems</span>. 
+            Whether you have a question about my work or just want to connect, my inbox is open.
+        </p>
+        
+        <div class="contact-actions">
+            <a href="mailto:mowlanausmaan@gmail.com" class="contact-btn main-contact-btn">
+                <ion-icon name="paper-plane-outline" style="font-size: 18px;"></ion-icon> 
+                Say Hello
+            </a>
+            <a href="https://wa.me/94770269182" target="_blank" class="contact-btn secondary-contact-btn" title="WhatsApp Me">
+                <ion-icon name="logo-whatsapp" style="font-size: 18px;"></ion-icon> 
+                WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/in/usmaan-mowlana" target="_blank" class="contact-btn secondary-contact-btn" title="LinkedIn">
+                <ion-icon name="logo-linkedin" style="font-size: 18px;"></ion-icon> 
+                LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <footer class="system-status-bar">
+        
+        <div class="status-segment status-left">
+            <div class="status-item" title="Current Status: Online">
+                <span class="live-indicator"></span>
+                <span>ONLINE</span>
+            </div>
+            <div class="status-item">
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Colombo 00500, LK</span>
+            </div>
+        </div>
+
+        <div class="status-segment status-center">
+            <div class="status-item">
+                <span>© 2024 Usmaan Mowlana</span>
+            </div>
+        </div>
+
+        <div class="status-segment status-right">
+            <div class="status-item" title="Built with VS Code">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <span>VS Code</span>
+            </div>
+            <div class="status-item" title="Powered by Python">
+                <ion-icon name="logo-python"></ion-icon>
+                <span>Python</span>
+            </div>
+        </div>
+
+    </footer>
+
+</section>
+
+<script src="assets/js/main.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
