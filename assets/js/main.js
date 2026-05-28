@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     // --- 1. PARTICLES CONFIG (The Constellation Background) ---
-    if(typeof particlesJS !== 'undefined') {
+    // Skip particles on phones — saves CPU and avoids the heavy animated background on mobile.
+    const isPhone = window.matchMedia('(max-width: 768px)').matches;
+    if(typeof particlesJS !== 'undefined' && !isPhone) {
         particlesJS("particles-js", {
             "particles": {
                 "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
@@ -68,6 +70,27 @@ document.addEventListener("DOMContentLoaded", () => {
         const step = card ? card.offsetWidth + 15 : 255;
         grid.scrollBy({ left: direction * step * 2, behavior: 'smooth' });
     };
+
+    // --- 5. MOBILE NAV (HAMBURGER) ---
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if (navToggle && navMenu) {
+        const closeMenu = () => {
+            navMenu.classList.remove('is-open');
+            navToggle.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        };
+        navToggle.addEventListener('click', () => {
+            const open = navMenu.classList.toggle('is-open');
+            navToggle.classList.toggle('is-open', open);
+            navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            document.body.style.overflow = open ? 'hidden' : '';
+        });
+        // Close when a nav link is tapped, or on Escape.
+        navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+    }
 });
 
 // Object to track indices for different sliders
