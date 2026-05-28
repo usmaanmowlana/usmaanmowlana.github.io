@@ -709,7 +709,8 @@ footer { color: var(--slate); font-family: var(--font-mono); font-size: 0.8rem; 
 /* --- NEW: VERTICAL IMAGE TRAINS --- */
 .spc-visual {
     position: relative;
-    height: 450px; 
+    min-height: 450px;
+    height: 100%;
     overflow: hidden;
     border-radius: 6px;
     background: var(--navy);
