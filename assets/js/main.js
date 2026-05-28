@@ -59,6 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
     window.plusSlides = function(n, sliderId) {
         showSlides(slideIndices[sliderId] += n, sliderId);
     }
+
+    // --- 4. CERT CAROUSEL SCROLL ---
+    window.scrollCerts = function(direction) {
+        const grid = document.getElementById('certs-grid');
+        if (!grid) return;
+        const card = grid.querySelector('.cert-item');
+        const step = card ? card.offsetWidth + 15 : 255;
+        grid.scrollBy({ left: direction * step * 2, behavior: 'smooth' });
+    };
 });
 
 // Object to track indices for different sliders

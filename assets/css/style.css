@@ -771,10 +771,19 @@ footer { color: var(--slate); font-family: var(--font-mono); font-size: 0.8rem; 
 }
 
 /* 3. Certifications */
-.certs-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;
+.certs-carousel {
+    position: relative; margin-top: 15px;
 }
+.certs-grid {
+    display: flex; gap: 15px;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    padding: 5px 50px;
+    scrollbar-width: none;
+}
+.certs-grid::-webkit-scrollbar { display: none; }
 .cert-item {
+    flex: 0 0 240px;
+    scroll-snap-align: start;
     display: flex; align-items: center; gap: 15px;
     background: var(--light-navy); border: 1px solid var(--lightest-navy);
     padding: 15px; border-radius: 6px; transition: var(--transition);
@@ -784,10 +793,24 @@ footer { color: var(--slate); font-family: var(--font-mono); font-size: 0.8rem; 
     width: 40px; height: 40px; background: var(--navy); color: var(--cyan);
     display: flex; align-items: center; justify-content: center;
     border-radius: 50%; font-weight: bold; font-family: var(--font-mono);
+    flex-shrink: 0;
 }
 .cert-info { display: flex; flex-direction: column; }
 .cert-title { color: var(--white); font-size: 13px; font-weight: 600; }
 .cert-issuer { color: var(--slate); font-size: 11px; font-family: var(--font-mono); }
+.cert-arrow {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    z-index: 2; cursor: pointer;
+    width: 40px; height: 40px;
+    background: var(--light-navy); border: 1px solid var(--lightest-navy);
+    color: var(--cyan); font-size: 16px; font-weight: bold;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transition: var(--transition);
+}
+.cert-arrow:hover { background: var(--cyan); color: var(--navy); border-color: var(--cyan); }
+.cert-prev { left: 0; }
+.cert-next { right: 0; }
 
 /* --- Project Buttons Styling --- */
 
